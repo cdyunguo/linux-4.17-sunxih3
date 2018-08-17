@@ -1,0 +1,11 @@
+Package: linux-dtb-next-sunxi
+Source: linux-4.17.14-sunxi
+Version: 5.57
+Architecture: armhf
+Maintainer: Igor Pecovnik <igor.pecovnik@****l.com>
+Installed-Size: 3862
+Section: kernel
+Priority: optional
+Homepage: http://www.kernel.org/
+Description: Linux DTB, version 4.17.14-sunxi
+ This package contains device blobs from the Linux kernel, version 4.17.14-sunxi

@@ -1,0 +1,56 @@
+// DT overlay for operating points to 1.4GHz
+
+/dts-v1/;
+/plugin/;
+
+/ {
+	fragment@0 {
+		target = <&cpu_opp_table>;
+
+		__overlay__ {
+			compatible = "operating-points-v2";
+			opp-shared;
+
+			// in order to match the H5 DT cooling-maps, replace the latter
+			// part of the OP table with the new frequencies...
+
+			// override the "960MHz" opp definition with the 1.008GHz clock definition
+			opp@960000000 {
+				opp-hz = /bits/ 64 <1008000000>;
+				opp-microvolt = <1200000 1200000 1300000>;
+				clock-latency-ns = <244144>; /* 8 32k periods */
+			};
+
+
+			// override the "1.008GHz" opp definition with the 1.104GHz clock definition
+			opp@1008000000 {
+				opp-hz = /bits/ 64 <1104000000>;
+				opp-microvolt = <1240000 1240000 1400000>;
+				clock-latency-ns = <244144>; /* 8 32k periods */
+			};
+
+			// override the "1.056GHz" opp definition with the 1.200GHz clock definition
+			opp@1056000000 {
+				opp-hz = /bits/ 64 <1200000000>;
+				opp-microvolt = <1290000 1290000 1400000>;
+				clock-latency-ns = <244144>; /* 8 32k periods */
+			};
+
+
+			// override the "1.104GHz" opp definition with the 1.296GHz clock definition
+			opp@1104000000 {
+                                opp-hz = /bits/ 64 <1296000000>;
+                                opp-microvolt = <1340000 1340000 1400000>;
+                                clock-latency-ns = <244144>; /* 8 32k periods */
+                        };
+
+			// override the "1.152GHz" opp definition with the 1.392GHz clock definition
+			opp@1152000000 {
+				opp-hz = /bits/ 64 <1392000000>;
+				opp-microvolt = <1400000 1400000 1400000>;
+				clock-latency-ns = <244144>; /* 8 32k periods */
+			};
+		};
+	};
+};
+

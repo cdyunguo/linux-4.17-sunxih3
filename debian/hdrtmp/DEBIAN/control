@@ -1,0 +1,13 @@
+Package: linux-headers-next-sunxi
+Source: linux-4.17.14-sunxi
+Version: 5.57
+Architecture: armhf
+Maintainer: Igor Pecovnik <igor.pecovnik@****l.com>
+Installed-Size: 70477
+Section: kernel
+Priority: optional
+Homepage: http://www.kernel.org/
+Description: Linux kernel headers for 4.17.14-sunxi on armhf
+ This package provides kernel header files for 4.17.14-sunxi on armhf
+ .
+ This is useful for people who need to build external modules

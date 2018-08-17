@@ -1,0 +1,2 @@
+cd /usr/src/linux-headers-4.17.14-sunxi; echo "Compiling headers - please wait ..."; find -type f -exec touch {} + ; make -s scripts >/dev/null 2>&1
+exit 0

@@ -1,0 +1,3 @@
+linux-dtb-next-sunxi_5.57_armhf.deb kernel optional
+linux-headers-next-sunxi_5.57_armhf.deb kernel optional
+linux-image-next-sunxi_5.57_armhf.deb kernel optional

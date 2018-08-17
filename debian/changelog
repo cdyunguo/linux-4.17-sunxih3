@@ -1,0 +1,5 @@
+linux-4.17.14-sunxi (5.57) xenial; urgency=low
+
+  * Custom built Linux kernel.
+
+ -- Igor Pecovnik <igor.pecovnik@****l.com>  Tue, 29 Jul 2025 22:37:52 +0800

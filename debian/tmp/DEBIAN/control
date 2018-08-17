@@ -1,0 +1,12 @@
+Package: linux-image-next-sunxi
+Source: linux-4.17.14-sunxi
+Version: 5.57
+Architecture: armhf
+Maintainer: Igor Pecovnik <igor.pecovnik@****l.com>
+Installed-Size: 58535
+Section: kernel
+Priority: optional
+Homepage: http://www.kernel.org/
+Description: Linux kernel, version 4.17.14-sunxi
+ This package contains the Linux kernel, modules and corresponding other
+ files, version: 4.17.14-sunxi.

@@ -1,0 +1,3 @@
+if [ -d /boot/dtb-4.17.14-sunxi.old ]; then rm -rf /boot/dtb-4.17.14-sunxi.old; fi
+ln -sf dtb-4.17.14-sunxi /boot/dtb > /dev/null 2>&1 || mv /boot/dtb-4.17.14-sunxi /boot/dtb
+exit 0
